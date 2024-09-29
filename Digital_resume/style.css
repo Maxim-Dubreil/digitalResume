@@ -1,0 +1,575 @@
+/*Header*/
+* {
+    margin: 0;
+  }
+
+body {
+    font-family: "Montserrat", normal;
+    font-size: 18px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    padding-bottom: 70px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    width: 100%;
+}
+.lien-nom {
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    font-size: 18px;
+    font-family:"Rock salt";
+}
+
+.lien-nom:hover {
+    opacity: 0.5;
+}
+
+.lien-header {
+    font-size: 16px;
+    font-family: "Montserrat", normal;
+}
+.header-contact:hover {
+    opacity: 0.5;
+}
+.portfolio:hover {
+    opacity: 0.5;
+}
+.header-contact {
+    margin-right: 28px;
+}
+
+/*Footer*/
+footer {
+    position: sticky;
+    bottom: 0;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    padding: 20px 50px;
+}
+
+.lien-icone {
+    margin-left: 30px;
+}
+  
+.lien-icone:hover {
+    opacity: 0.5;
+}
+
+.lien-footer {
+    color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    font-size: 12px;
+    font-family:"Rock salt";
+}
+
+.lien-footer:hover {
+    opacity: 0.5;
+}
+
+/*parallax + Intro"*/
+.parallax-container {
+    background-image: url('image/background/background1.jpg'); /* Image de fond */
+    background-attachment: fixed; /* Effet parallaxe : l'image reste fixe */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;  /* Coupe l'image qui dépasse les dimensions du conteneur */
+}
+
+.text-intro {
+    text-align: center;
+    justify-content: center;
+    padding-right: 5%;
+    max-width: 22%;
+}
+
+.image-intro {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h1{
+    color: #1d1d1d;
+    font-size: 25px;
+    font-family:"Rock salt";
+    padding-bottom: 5%;  
+}
+
+em{
+    color: #1d1d1d;
+    font-family: "Montserrat", normal;
+    text-decoration: none;
+    line-height: 1.5;
+
+
+    font-weight:normal;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 15%;
+    text-align: left;
+    text-align: justify;
+
+}
+.contact-lien {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    text-align: justify;
+
+    border: 2px, solid, #1d1d1d;
+    padding : 5px;    
+    line-height: 1.5;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.contact-lien:hover {
+    opacity: 0.5;
+}
+
+/*buffer*/
+.buffer {
+    width: 100%;
+    min-height: 50vh;
+    background-color:#1d1d1d;
+    display: grid;
+    place-items: center;
+}
+
+/*section 2 "Project"*/
+.parallax-container2 {
+    background-image: url("image/background/background2.jpg");
+    text-align: center;
+}
+
+.projects {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.projects h2 {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    color: #1d1d1d;
+    font-size: 30px;
+    font-family:"Rock salt"; 
+    }
+    
+.bloc-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65%;
+    width: 1000px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-bottom: 6%;
+    box-sizing: border-box; /*assure que le padding est inclus dans la largeur total*/
+}
+
+.card {
+    display: flex;
+    flex-direction: row ;
+    gap: 5px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image:hover {
+    opacity: 0.9;
+}
+
+.bloc-card h3 {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-family:"Rock salt";   
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration: underline;
+}
+
+.bloc-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    text-align: justify;
+    color: #1d1d1d;
+    font-family: "Montserrat", normal;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+}
+
+/*Contact*/
+.contact {
+    width: 100%;
+    background-color:#FFFFFF;
+    margin-bottom: 10%;
+}
+
+.contact h2 {
+    color: #1d1d1d;
+    font-size: 28px;
+    font-family:"Rock salt";   
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: auto;
+    color: white;
+}
+
+.form-name-email {
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.form-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+input, textarea {
+  padding: 15px;
+  border-color: #1d1d1d;
+  border-width: 2px;
+  border-radius: 15px;
+}
+
+label {
+    color: #1d1d1d;
+    font-family: "Montserrat", normal;
+    padding-left: 1%;
+    padding-bottom: 1%;
+
+}
+
+input[type='submit'] {
+    width: 100px;
+    margin: auto;
+    margin-top: 4%;
+    padding-top: 1px;
+    padding: 1px;
+}
+
+.button-submit {
+    background: #FFFFFF;
+    border-radius: 15px;
+
+}
+
+.button-submit:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .parallax-container {
+        flex-direction: column;
+    }
+
+    .text-intro {
+        padding: 0;
+        max-width: none;
+        margin-top: -20%;
+    }
+
+    .image-intro {
+        margin-top: 10%;
+        width: 300px; 
+    }
+
+    h1{
+        padding-bottom: 4%;
+    }
+    
+    p {
+        width: 60%;
+        margin-left: 20%;
+        padding-bottom: 4%; 
+    }
+
+    .parallax-container2 {
+        padding-bottom: 5%;
+    }
+
+    .projects h2 {
+        margin-bottom: 6%;
+        font-size: 25px;
+    }
+
+    .bloc-card {
+        height: 50%;
+        width: 350px;
+        margin-bottom: 8%;
+    }
+
+    .card {
+        gap: 8px;
+
+    }
+
+    .image {
+        width:  325px;
+        height: 180px;
+    }
+    .bloc-card h3 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .bloc-card p {
+        font-size: 18px;
+        margin: 0%;
+        width: 80%;
+    }
+
+    .contact {
+        margin-bottom: 10%;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        gap: 15px;
+    }
+
+    .form-name-email {
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type='submit'] {
+        width: 100px;
+        margin-top: 4%;
+    } 
+    .lien-icone {
+        margin-left: 10px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px) {
+    .parallax-container {
+        flex-direction: column;
+    }
+
+    .text-intro {
+        padding: 0;
+        max-width: none;
+        margin-top: -10%;
+    }
+
+    .image-intro {
+        margin-top: 10%;
+        width: 380px; 
+    }
+    
+    h1 {
+        padding-bottom: 4%;
+    }
+    
+    p {
+        width: 70%;
+        padding-left: 15%;
+        padding-bottom: 5%; 
+    }
+
+    .parallax-container2 {
+        padding-bottom: 5%;
+    }
+
+    .projects h2 {
+        margin-bottom: 6%;
+        font-size: 25px;
+    }
+
+    .bloc-card {
+        height: 50%;
+        width: 700px;
+        margin-bottom: 8%;
+    }
+    
+    .card {
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        width: 215px;
+        height: 150px;
+    }
+
+    .bloc-card h3 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .bloc-card p {
+        font-size: 18px;
+        margin: 0%;
+        width: 90%;
+    }
+
+    .contact {
+        margin-bottom: 10%;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 550px;  
+    }
+
+    input[type='submit'] {
+        width: 100px;
+    } 
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+    .parallax-container {
+        flex-direction: column;
+    }
+
+    .text-intro {
+        padding: 0;
+        max-width: none;
+        margin-top: -10%;
+    }
+
+    .image-intro {
+        margin-top: 10%;
+        width: 400px; 
+
+    }
+    
+    h1 {
+        padding-bottom: 4%;
+    }
+    
+    p {
+        width: 80%;
+        padding-left: 10%;
+        padding-bottom: 2%; 
+    }
+
+    .parallax-container2 {
+        padding-bottom: 5%;
+    }
+
+    .projects h2 {
+        margin-bottom: 6%;
+        font-size: 25px;
+    }
+
+    .bloc-card {
+        height: 50%;
+        width: 850px;
+        margin-bottom: 8%;
+    }
+
+    .card {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        width:  250px;
+        height: 200px;
+    }
+    .bloc-card h3 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .bloc-card p {
+        font-size: 18px;
+        margin: 0%;
+        width: 90%;
+    }
+
+    .contact {
+        margin-bottom: 10%;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;  
+    }
+
+    input[type='submit'] {
+        width: 100px;
+    } 
+}
