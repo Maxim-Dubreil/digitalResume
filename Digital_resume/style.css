@@ -105,6 +105,8 @@ footer {
 }
 
 .text-intro {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     padding-right: 5%;
@@ -144,23 +146,54 @@ p {
     text-align: justify;
 
 }
+
+/* .wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
 .contact-lien {
-    font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
-    text-align: left;
-    text-align: justify;
-
-    border: 2px, solid, #1d1d1d;
-    padding : 5px;
+    padding : 10px;
     line-height: 1.5;
-
-    background-color: rgba(255, 255, 255, 0.4);
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
     border-radius: 10px;
 }
 
+.contact-lien span {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-lien:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: all .35s;
+    border-radius: 10px;
+}
 .contact-lien:hover {
-    opacity: 0.5;
+    color: #1d1d1d;
+}
+.contact-lien:hover:after {
+    width: 100%;
 }
 
 /*buffer*/
@@ -308,7 +341,8 @@ input[type='submit'] {
 
 .button-submit {
     background: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 5px;
+    padding: 5px !important;
 
 }
 
