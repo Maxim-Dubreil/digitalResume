@@ -18,6 +18,7 @@ header {
     top: 0;
     background-color: #FFFFFF;
     padding-bottom: 70px;
+    z-index: 1000;
 }
 
 nav {
@@ -29,10 +30,11 @@ nav {
     width: 100%;
 }
 .lien-nom {
-    padding-top: 5px;
-    padding-bottom: 5px ;
-    font-size: 18px;
-    font-family:"Rock salt";
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    font-size: 22px;
+    font-family:"Merriweather", sans-serif;
+    font-weight:500;
 }
 
 .lien-nom:hover {
@@ -69,7 +71,7 @@ footer {
 .lien-icone {
     margin-left: 30px;
 }
-  
+
 .lien-icone:hover {
     opacity: 0.5;
 }
@@ -79,7 +81,7 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px ;
     font-size: 12px;
-    font-family:"Rock salt";
+    font-family:"Merriweather";
 }
 
 .lien-footer:hover {
@@ -117,8 +119,8 @@ footer {
 h1{
     color: #1d1d1d;
     font-size: 25px;
-    font-family:"Rock salt";
-    padding-bottom: 5%;  
+    font-family:"Merriweather", sans-serif;
+    padding-bottom: 5%;
 }
 
 em{
@@ -150,7 +152,7 @@ p {
     text-align: justify;
 
     border: 2px, solid, #1d1d1d;
-    padding : 5px;    
+    padding : 5px;
     line-height: 1.5;
 
     background-color: rgba(255, 255, 255, 0.4);
@@ -164,7 +166,7 @@ p {
 /*buffer*/
 .buffer {
     width: 100%;
-    min-height: 50vh;
+    min-height: 5px;
     background-color:#1d1d1d;
     display: grid;
     place-items: center;
@@ -177,9 +179,9 @@ p {
 }
 
 .projects {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .projects h2 {
@@ -187,9 +189,9 @@ p {
     margin-bottom: 5%;
     color: #1d1d1d;
     font-size: 30px;
-    font-family:"Rock salt"; 
+    font-family:"Merriweather";
     }
-    
+
 .bloc-card {
     display: flex;
     flex-direction: column;
@@ -224,7 +226,7 @@ p {
 .bloc-card h3 {
     color: #1d1d1d;
     font-size: 20px;
-    font-family:"Rock salt";   
+    font-family:"Merriweather";
     padding-top: 2%;
     padding-bottom: 2%;
     text-decoration: underline;
@@ -254,7 +256,7 @@ p {
 .contact h2 {
     color: #1d1d1d;
     font-size: 28px;
-    font-family:"Rock salt";   
+    font-family:"Merriweather";
     text-align: center;
     padding-top: 5%;
     padding-bottom: 4%;
@@ -263,7 +265,7 @@ p {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 650px;
+    max-width: 100vh;
     margin: auto;
     color: white;
 }
@@ -327,17 +329,17 @@ input[type='submit'] {
 
     .image-intro {
         margin-top: 10%;
-        width: 300px; 
+        width: 300px;
     }
 
     h1{
         padding-bottom: 4%;
     }
-    
+
     p {
         width: 60%;
         margin-left: 20%;
-        padding-bottom: 4%; 
+        padding-bottom: 4%;
     }
 
     .parallax-container2 {
@@ -401,7 +403,7 @@ input[type='submit'] {
     input[type='submit'] {
         width: 100px;
         margin-top: 4%;
-    } 
+    }
     .lien-icone {
         margin-left: 10px;
     }
@@ -419,17 +421,17 @@ input[type='submit'] {
 
     .image-intro {
         margin-top: 10%;
-        width: 380px; 
+        width: 380px;
     }
-    
+
     h1 {
         padding-bottom: 4%;
     }
-    
+
     p {
         width: 70%;
         padding-left: 15%;
-        padding-bottom: 5%; 
+        padding-bottom: 5%;
     }
 
     .parallax-container2 {
@@ -446,7 +448,7 @@ input[type='submit'] {
         width: 700px;
         margin-bottom: 8%;
     }
-    
+
     .card {
         gap: 5px;
         display: flex;
@@ -482,12 +484,12 @@ input[type='submit'] {
     form {
         display: flex;
         flex-direction: column;
-        width: 550px;  
+        width: 550px;
     }
 
     input[type='submit'] {
         width: 100px;
-    } 
+    }
 }
 
 @media(min-width: 1024px) and (max-width: 1280px) {
@@ -503,18 +505,18 @@ input[type='submit'] {
 
     .image-intro {
         margin-top: 10%;
-        width: 400px; 
+        width: 400px;
 
     }
-    
+
     h1 {
         padding-bottom: 4%;
     }
-    
+
     p {
         width: 80%;
         padding-left: 10%;
-        padding-bottom: 2%; 
+        padding-bottom: 2%;
     }
 
     .parallax-container2 {
@@ -566,10 +568,10 @@ input[type='submit'] {
     form {
         display: flex;
         flex-direction: column;
-        width: 600px;  
+        width: 600px;
     }
 
     input[type='submit'] {
         width: 100px;
-    } 
+    }
 }
